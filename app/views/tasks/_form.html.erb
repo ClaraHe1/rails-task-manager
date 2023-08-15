@@ -1,0 +1,12 @@
+<div class="mb-3">
+<%= form_with model: task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+<% end %>
+</div>
+<div type="button" class="btn btn-primary" aria-label="Basic example">
+<%= link_to "Back to list", tasks_path %>
+</div>
